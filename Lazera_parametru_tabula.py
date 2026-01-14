@@ -73,4 +73,5 @@ if uploaded_file:
 else:
     st.info("Lūdzu augšupielādējiet CSV vai Excel failu, lai ģenerētu tabulu.")
 
-print(df.head(10))
+st.subheader("Preview of Generated Table")
+st.dataframe(df.head(10))
